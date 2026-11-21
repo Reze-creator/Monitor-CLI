@@ -34,7 +34,7 @@
 }
 ```
 
-HTTP 目标可选 `expected_status`（不填时要求 2xx）和 `contains`（检查响应正文是否包含指定文本）；所有目标都可设置 `retry_count`，范围为 0 到 3。
+HTTP 目标可选 `expected_status`（不填时要求 2xx）、`contains`（检查响应正文是否包含指定文本）和 `user_agent`（为该目标设置 HTTP 请求的 `User-Agent`）。所有目标都可设置 `retry_count`，范围为 0 到 3。
 
 ## 运行
 

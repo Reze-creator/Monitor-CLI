@@ -4,12 +4,14 @@
       "name": "百度搜索",
       "type": "http",
       "address": "https://www.baidu.com",
-      "expected_status": 200
+      "expected_status": 200,
+      "retry_count": 3
     },
     {
       "name": "网易首页",
       "type": "http",
       "address": "https://www.163.com",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
       "expected_status": 200
     },
     {

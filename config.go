@@ -20,6 +20,7 @@ type Target struct {
 	Type           string `json:"type"`
 	Address        string `json:"address"`
 	ExpectedStatus int    `json:"expected_status,omitempty"`
+	UserAgent      string `json:"user_agent,omitempty"`
 	Contains       string `json:"contains,omitempty"`
 	RetryCount     int    `json:"retry_count,omitempty"`
 }

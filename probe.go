@@ -56,6 +56,10 @@ func probeHTTP(target Target, timeout time.Duration) error {
 	if err != nil {
 		return fmt.Errorf("create request: %w", err)
 	}
+	// A target can override the default User-Agent for its HTTP requests.
+	if target.UserAgent != "" {
+		request.Header.Set("User-Agent", target.UserAgent)
+	}
 	response, err := http.DefaultClient.Do(request)
 	if err != nil {
 		return fmt.Errorf("http request: %w", err)
